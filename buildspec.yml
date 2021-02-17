@@ -8,11 +8,11 @@ phases:
   build:
     commands:
     - echo "Entered build phase"
-    - mvn clean prepare-package -DskipTests war:exploded
+    - mvn clean package -DskipTests -P cloud
   post_build:
     commands:
-    - echo "Entered the post-build phase"
-    - mv target/deploy ./
+    - echo "Build en suuces"
 artifacts:
   files:
-    - deploy/**/*
+    - targrt/my-reviews.jar
+  discard-paths: yes
