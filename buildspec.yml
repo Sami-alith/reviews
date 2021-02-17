@@ -14,5 +14,5 @@ phases:
     - echo "Build en suuces"
 artifacts:
   files:
-    - targrt/my-reviews.jar
+    - target/my-reviews.jar
   discard-paths: yes
