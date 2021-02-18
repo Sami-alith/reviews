@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1"></meta>
-<title>Company reviews</title>
+<title>Commentaires</title>
 
 <style type="text/css">
 body {
@@ -69,12 +69,11 @@ a:hover, a:active {
 </style>
 </head>
 <body class="register">
-	<div align="center" class="register-title">My Review</div>
+	<div align="center" class="register-title">Mon commentaire</div>
 	<p th:text="${status}" style="color: navy;"></p>
 	<nav>
-		<a th:href="@{/addReview}" class="register-button">Add review </a> <br></br>
-		<a th:href="@{/getReviews}" class="register-button">View All
-			Reviews</a><br></br>
+		<a th:href="@{/addReview}" class="register-button">Ajouter commentaire </a> <br></br>
+		<a th:href="@{/getReviews}" class="register-button">Voir tous les commentaires</a><br></br>
 	</nav>
 </body>
 </html>
